@@ -5,18 +5,11 @@ function sum2TopNum(array) {
     var max2 = 0;
     var result2 = 0;
 
-    // find top 1 int
-    for (a of array) {
-        if (a > max1) {
-            max1 = a;
-        }
-    }
+    if (array) {
+        array.sort();
 
-    // find top 2 int
-    for (a of array) {
-        if (a > max2 && a < max1) {
-            max2 = a;
-        }
+        max1 = array.pop();
+        max2 = array.pop();
     }
 
     return result2 = max1 + max2;
