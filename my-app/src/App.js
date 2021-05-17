@@ -7,7 +7,7 @@ const AddPost = React.lazy(() => import('./components/AddPost/addPostPage'));
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading</div>}>
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />

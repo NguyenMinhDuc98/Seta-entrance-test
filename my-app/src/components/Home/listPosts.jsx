@@ -37,7 +37,7 @@ function ListPosts() {
         <div>
             {
                 isLoading
-                    ? <div className='spinner'>Loading...</div>
+                    ? <div className='spinner'>Loading</div>
                     : (
                         <div>
                             <ReactFlexyTable 

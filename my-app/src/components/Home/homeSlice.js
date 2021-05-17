@@ -20,6 +20,9 @@ const home = createSlice({
         getPostsFailed: (state, action) => {
             state.isLoading = false;
             alert('Get post failed');
+        },
+        addPost: (state, action) =>{
+            state.listPost = action.payload;
         }
     }
 });
@@ -33,5 +36,5 @@ export const getListPosts = () => apiCallBegan({
 })
 
 const { reducer, actions } = home;
-export const { requestStart, getPostsFailed, getPostsSucceed } = actions;
+export const { requestStart, getPostsFailed, getPostsSucceed, addPost } = actions;
 export default reducer;
